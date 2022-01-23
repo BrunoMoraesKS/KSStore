@@ -22,11 +22,8 @@ const ProductCard = ({ product }: IProductCardProps) => {
     title: product.title,
     price: product.price,
     quantity: 1,
+    image: product.image,
   };
-
-  useEffect(() => {
-    console.log(cart);
-  }, [cart]);
 
   return (
     <S.Card
